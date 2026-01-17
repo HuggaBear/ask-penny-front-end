@@ -1,0 +1,97 @@
+/* ChatComposer Component Styles */
+
+.chat-composer {
+  border-top: 1px solid var(--brand-border);
+  background-color: white;
+  padding: 16px;
+}
+
+.chat-composer-root {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-composer-input {
+  width: 100%;
+  min-height: 44px;
+  max-height: 200px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  border: 1px solid var(--brand-border);
+  border-radius: 8px;
+  background-color: white;
+  color: var(--brand-text);
+  resize: none;
+  transition: all 0.2s ease-in-out;
+  overflow-y: auto;
+}
+
+.chat-composer-input:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(233, 70, 41, 0.1);
+}
+
+.chat-composer-input::placeholder {
+  color: var(--brand-textMuted);
+}
+
+/* Custom scrollbar for input */
+.chat-composer-input::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-composer-input::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-composer-input::-webkit-scrollbar-thumb {
+  background: var(--brand-border);
+  border-radius: 3px;
+}
+
+.chat-composer-input::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-textMuted);
+}
+
+/* Actions Row */
+.chat-composer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.chat-composer-hint {
+  font-size: 12px;
+  color: var(--brand-textMuted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chat-composer-hint kbd {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-family: 'Courier New', monospace;
+  background-color: var(--brand-bgDark);
+  border: 1px solid var(--brand-border);
+  border-radius: 4px;
+  color: var(--brand-text);
+}
+
+/* Disabled state */
+.chat-composer-root[data-state="disabled"] .chat-composer-input {
+  background-color: var(--brand-bgDark);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Loading state */
+.chat-composer-root[data-state="loading"] .chat-composer-input {
+  opacity: 0.7;
+}
