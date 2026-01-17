@@ -7,8 +7,8 @@
 export { ChatMessage } from './ChatMessage';
 export type { ChatMessageProps } from './ChatMessage';
 
-export { ChatTranscript } from './ChatTranscript';
-export type { ChatTranscriptProps } from './ChatTranscript';
+export { KnowledgeBaseIndicator } from './KnowledgeBaseIndicator';
+export type { KnowledgeBaseIndicatorProps, KBLayerStatus } from './KnowledgeBaseIndicator';
 
-export { ChatComposer } from './ChatComposer';
-export type { ChatComposerProps } from './ChatComposer';
+export { ProjectFilesSection } from './ProjectFilesSection';
+export type { ProjectFilesSectionProps } from './ProjectFilesSection';

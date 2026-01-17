@@ -24,3 +24,8 @@ export type { BadgeProps, BadgeColorScheme, BadgeVariant } from './Badge';
 
 export { Modal, ModalHeader, ModalBody, ModalFooter } from './Modal';
 export type { ModalProps, ModalSize } from './Modal';
+
+export { LoadingSpinner } from './LoadingSpinner';
+export type { LoadingSpinnerProps, SpinnerSize } from './LoadingSpinner';
+
+export { TypingIndicator } from './TypingIndicator';

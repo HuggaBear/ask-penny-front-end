@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { Button, Input, Avatar } from './components/primitives';
+import { Button, Input, Avatar, TypingIndicator } from './components/primitives';
 import { AppLayout } from './components/layouts/AppLayout';
 import { Sidebar } from './components/layouts/Sidebar';
 import { KnowledgeBaseIndicator } from './components/composite/KnowledgeBaseIndicator';
@@ -15,6 +15,7 @@ function App() {
   const [userRole, setUserRole] = useState<UserRole>(MOCK_USER_ROLE);
   const [files, setFiles] = useState<ProjectFile[]>(MOCK_PROJECT_FILES);
   const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<Array<{ role: 'user' | 'assistant'; content: string }>>([
     {
       role: 'assistant',
@@ -34,12 +35,13 @@ How can I help you today?`
 
   // Event handlers
   const handleSend = () => {
-    if (!message.trim()) return;
+    if (!message.trim() || isLoading) return;
 
     // Add user message
     const newMessages = [...messages, { role: 'user' as const, content: message }];
     setMessages(newMessages);
     setMessage('');
+    setIsLoading(true);
 
     // Simulate AI response after 1 second
     setTimeout(() => {
@@ -110,6 +112,7 @@ What would you like to focus on for **${currentPlaybook?.title}**?`;
       }
 
       setMessages([...newMessages, { role: 'assistant', content: response }]);
+      setIsLoading(false);
     }, 1000);
   };
 
@@ -197,6 +200,17 @@ This is a ${playbook.dealStage} stage opportunity. How can I help you prepare?`
             </div>
           </div>
         ))}
+
+        {/* Typing Indicator */}
+        {isLoading && (
+          <div className="message message-assistant">
+            <Avatar name="Penny" role="assistant" size="md" />
+            <div className="message-content">
+              <div className="message-name">Ask Penny AI</div>
+              <TypingIndicator />
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Knowledge Base Indicator */}
@@ -231,8 +245,8 @@ This is a ${playbook.dealStage} stage opportunity. How can I help you prepare?`
             }}
             fullWidth
           />
-          <Button onClick={handleSend} disabled={!message.trim()}>
-            Send
+          <Button onClick={handleSend} disabled={!message.trim() || isLoading}>
+            {isLoading ? 'Sending...' : 'Send'}
           </Button>
         </div>
         <div className="input-hint">
