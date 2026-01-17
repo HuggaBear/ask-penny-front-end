@@ -1,13 +1,14 @@
 /**
  * Ask Penny AI - SalesStar Brand Tokens
  *
- * Based on SalesStar brand style guide extracted from salesstar.com
+ * Based on official SalesStar Brand Guidelines (2023)
  * Date: 17-01-2026
  *
  * Key brand colors:
- * - Primary Blue: #0170B9
- * - Accent Orange: #E94629
- * - Dark Charcoal: #302E33
+ * - Primary Red: #E94629
+ * - Secondary Red: #FF290B
+ * - Charcoal: #302E33
+ * - Light Grey: #E8E8E8
  *
  * Note: Chakra UI v3 theme configuration will be set up in Week 1 Day 2
  * For now, we're using CSS custom properties for brand colors
@@ -16,31 +17,31 @@
 // SalesStar Brand Color Tokens
 export const brandColors = {
   // Primary brand palette
-  primary: '#0170B9',      // SalesStar blue
-  accent: '#E94629',       // SalesStar orange/red
-  charcoal: '#302E33',     // Dark headers
+  primary: '#E94629',      // SalesStar red/orange (PRIMARY)
+  secondary: '#FF290B',    // Bright red (SECONDARY)
+  charcoal: '#302E33',     // Dark charcoal
 
-  // Gray scale
+  // Gray scale (from official brand guidelines)
   gray50: '#FAFAFA',
   gray100: '#F5F5F5',
-  gray200: '#E5E5E5',
-  gray300: '#A7AAAF',
-  gray400: '#4B4F58',      // Body text
-  gray500: '#3A3A3A',      // Headings
-  gray600: '#302E33',
+  gray200: '#E8E8E8',      // Light grey (official)
+  gray300: '#A7AAAF',      // Medium grey
+  gray400: '#3E3C42',      // Dark grey
+  gray500: '#CECECE',      // Light grey alt
+  gray600: '#302E33',      // Charcoal
 
-  // UI colors
-  bg: '#F7FAFC',
-  bgDark: '#EDF2F7',
-  text: '#4B4F58',
-  textLight: '#718096',
-  textMuted: '#A0AEC0',
-  border: '#E2E8F0',
+  // UI colors (using greys, not blues)
+  bg: '#FAFAFA',           // Light background
+  bgDark: '#F5F5F5',       // Slightly darker background
+  text: '#3E3C42',         // Dark grey for body text
+  textLight: '#A7AAAF',    // Medium grey for secondary text
+  textMuted: '#CECECE',    // Light grey for muted text
+  border: '#E8E8E8',       // Official light grey for borders
 
-  // Chat-specific
-  userMessage: '#E3F2FD',
-  aiMessage: '#FFFFFF',
-  codeBlock: '#F5F5F5',
+  // Chat-specific (grey-based, not blue)
+  userMessage: '#FEF5F4',  // Very light red tint for user messages
+  aiMessage: '#FFFFFF',    // White for AI messages
+  codeBlock: '#F5F5F5',    // Light grey for code blocks
 };
 
 // Typography tokens

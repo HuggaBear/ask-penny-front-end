@@ -15,26 +15,59 @@ function App() {
         {/* Brand Colors */}
         <section className="card">
           <h2>Brand Colors</h2>
+          <h3 style={{ fontSize: '18px', marginBottom: '16px', color: '#A7AAAF' }}>Primary Palette</h3>
           <div className="color-grid">
             <div className="color-item">
               <div className="color-swatch" style={{ backgroundColor: brandColors.primary }}></div>
               <div className="color-info">
-                <p className="color-name">Primary Blue</p>
+                <p className="color-name">Primary Red</p>
                 <p className="color-hex">{brandColors.primary}</p>
               </div>
             </div>
             <div className="color-item">
-              <div className="color-swatch" style={{ backgroundColor: brandColors.accent }}></div>
+              <div className="color-swatch" style={{ backgroundColor: brandColors.gray200 }}></div>
               <div className="color-info">
-                <p className="color-name">Accent Orange</p>
-                <p className="color-hex">{brandColors.accent}</p>
+                <p className="color-name">Light Grey</p>
+                <p className="color-hex">{brandColors.gray200}</p>
               </div>
             </div>
             <div className="color-item">
               <div className="color-swatch" style={{ backgroundColor: brandColors.charcoal }}></div>
               <div className="color-info">
-                <p className="color-name">Dark Charcoal</p>
+                <p className="color-name">Charcoal</p>
                 <p className="color-hex">{brandColors.charcoal}</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 style={{ fontSize: '18px', margin: '24px 0 16px', color: '#A7AAAF' }}>Secondary Palette</h3>
+          <div className="color-grid">
+            <div className="color-item">
+              <div className="color-swatch" style={{ backgroundColor: brandColors.secondary }}></div>
+              <div className="color-info">
+                <p className="color-name">Bright Red</p>
+                <p className="color-hex">{brandColors.secondary}</p>
+              </div>
+            </div>
+            <div className="color-item">
+              <div className="color-swatch" style={{ backgroundColor: brandColors.gray300 }}></div>
+              <div className="color-info">
+                <p className="color-name">Medium Grey</p>
+                <p className="color-hex">{brandColors.gray300}</p>
+              </div>
+            </div>
+            <div className="color-item">
+              <div className="color-swatch" style={{ backgroundColor: brandColors.gray400 }}></div>
+              <div className="color-info">
+                <p className="color-name">Dark Grey</p>
+                <p className="color-hex">{brandColors.gray400}</p>
+              </div>
+            </div>
+            <div className="color-item">
+              <div className="color-swatch" style={{ backgroundColor: brandColors.gray500 }}></div>
+              <div className="color-info">
+                <p className="color-name">Light Grey Alt</p>
+                <p className="color-hex">{brandColors.gray500}</p>
               </div>
             </div>
           </div>
@@ -78,7 +111,7 @@ function App() {
             </button>
           </div>
           <p className="caption">
-            Primary buttons use SalesStar accent orange (#E94629) with 4px border radius
+            Primary buttons use SalesStar primary red (#E94629) with 4px border radius
           </p>
         </section>
 
@@ -95,9 +128,9 @@ function App() {
             </div>
             <div className="link-demo">
               <a href="#" className="brand-link">
-                This is a link using SalesStar primary blue
+                This is a link using SalesStar primary red
               </a>
-              <p className="caption">Links use #0170B9 and darken to #3A3A3A on hover</p>
+              <p className="caption">Links use #E94629 and darken to charcoal (#302E33) on hover</p>
             </div>
           </div>
         </section>

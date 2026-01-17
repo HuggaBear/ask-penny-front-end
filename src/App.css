@@ -21,7 +21,7 @@
 .header h1 {
   font-size: 40px;
   font-weight: 500;
-  color: var(--brand-gray500);
+  color: var(--brand-charcoal);
   margin: 0 0 12px;
   line-height: 1.4em;
 }
@@ -50,7 +50,7 @@
 .card h2, .card h3 {
   font-size: 25px;
   font-weight: 500;
-  color: var(--brand-gray500);
+  color: var(--brand-charcoal);
   margin: 0 0 16px;
   line-height: 1.3em;
 }
@@ -115,7 +115,7 @@
 .sample-h1 {
   font-size: 40px;
   font-weight: 500;
-  color: var(--brand-gray500);
+  color: var(--brand-charcoal);
   line-height: 1.4em;
   margin: 0 0 8px;
 }
@@ -123,7 +123,7 @@
 .sample-h2 {
   font-size: 32px;
   font-weight: 500;
-  color: var(--brand-gray500);
+  color: var(--brand-charcoal);
   line-height: 1.3em;
   margin: 0 0 8px;
 }
@@ -131,7 +131,7 @@
 .sample-h3 {
   font-size: 25px;
   font-weight: 500;
-  color: var(--brand-gray500);
+  color: var(--brand-charcoal);
   line-height: 1.3em;
   margin: 0 0 8px;
 }
@@ -190,7 +190,7 @@
 }
 
 .btn-secondary:hover {
-  background-color: rgba(1, 112, 185, 0.05);
+  background-color: rgba(233, 70, 41, 0.05);
 }
 
 .btn-ghost {
@@ -199,7 +199,7 @@
 }
 
 .btn-ghost:hover {
-  background-color: rgba(1, 112, 185, 0.05);
+  background-color: rgba(233, 70, 41, 0.05);
 }
 
 .caption {
@@ -267,14 +267,14 @@
 }
 
 .brand-link:hover {
-  color: var(--brand-gray500);
+  color: var(--brand-charcoal);
   text-decoration: underline;
 }
 
 /* Info Card */
 .card-info {
-  background-color: rgba(1, 112, 185, 0.05);
-  border: 1px solid rgba(1, 112, 185, 0.2);
+  background-color: rgba(233, 70, 41, 0.05);
+  border: 1px solid rgba(233, 70, 41, 0.2);
 }
 
 .checklist {
