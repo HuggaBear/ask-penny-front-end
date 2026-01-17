@@ -1,42 +1,297 @@
-#root {
-  max-width: 1280px;
+/* Ask Penny AI - SalesStar Brand Style Guide Demo */
+
+.app {
+  min-height: 100vh;
+  background-color: var(--brand-bg);
+  padding: 40px 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+/* Header */
+.header {
   text-align: center;
+  padding: 32px 0 48px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--brand-gray500);
+  margin: 0 0 12px;
+  line-height: 1.4em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle {
+  font-size: 18px;
+  color: var(--brand-textLight);
+  margin: 0 0 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.status {
+  font-size: 14px;
+  color: var(--brand-textMuted);
+  margin: 0;
 }
 
+/* Card */
 .card {
-  padding: 2em;
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.22);
 }
 
-.read-the-docs {
-  color: #888;
+.card h2, .card h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--brand-gray500);
+  margin: 0 0 16px;
+  line-height: 1.3em;
+}
+
+/* Color Grid */
+.color-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.color-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.color-swatch {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.color-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.color-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brand-text);
+  margin: 0;
+}
+
+.color-hex {
+  font-size: 12px;
+  color: var(--brand-textMuted);
+  font-family: 'Courier New', monospace;
+  margin: 0;
+}
+
+/* Typography Samples */
+.typography-samples {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.type-sample {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--brand-border);
+}
+
+.type-sample:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sample-h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--brand-gray500);
+  line-height: 1.4em;
+  margin: 0 0 8px;
+}
+
+.sample-h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--brand-gray500);
+  line-height: 1.3em;
+  margin: 0 0 8px;
+}
+
+.sample-h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--brand-gray500);
+  line-height: 1.3em;
+  margin: 0 0 8px;
+}
+
+.sample-body {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--brand-text);
+  line-height: 1.65em;
+  margin: 0 0 8px;
+}
+
+.type-meta {
+  font-size: 12px;
+  color: var(--brand-textMuted);
+  margin: 0;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--brand-accent);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--brand-charcoal);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--brand-primary);
+  border: 1px solid var(--brand-primary);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(1, 112, 185, 0.05);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--brand-primary);
+}
+
+.btn-ghost:hover {
+  background-color: rgba(1, 112, 185, 0.05);
+}
+
+.caption {
+  font-size: 14px;
+  color: var(--brand-textMuted);
+  margin: 0;
+}
+
+/* UI Elements */
+.elements-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.badge-green {
+  background-color: #C6F6D5;
+  color: #22543D;
+}
+
+.badge-blue {
+  background-color: #BEE3F8;
+  color: #2C5282;
+}
+
+.badge-purple {
+  background-color: #E9D8FD;
+  color: #553C9A;
+}
+
+.badge-orange {
+  background-color: #FEEBC8;
+  color: #C05621;
+}
+
+.badge-red {
+  background-color: #FED7D7;
+  color: #C53030;
+}
+
+.link-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.brand-link {
+  color: var(--brand-primary);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.brand-link:hover {
+  color: var(--brand-gray500);
+  text-decoration: underline;
+}
+
+/* Info Card */
+.card-info {
+  background-color: rgba(1, 112, 185, 0.05);
+  border: 1px solid rgba(1, 112, 185, 0.2);
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checklist li {
+  font-size: 14px;
+  color: var(--brand-text);
+}
+
+.checklist li strong {
+  color: var(--brand-primary);
+  font-weight: 600;
 }
