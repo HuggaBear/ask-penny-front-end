@@ -1,0 +1,92 @@
+/* Card Component Styles */
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Variants */
+.card-default {
+  box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.22);
+  border: none;
+}
+
+.card-elevated {
+  box-shadow: 0px 4px 12px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.card-outlined {
+  box-shadow: none;
+  border: 1px solid var(--brand-border);
+}
+
+.card-elevated:hover {
+  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Padding */
+.card-padding-none {
+  padding: 0;
+}
+
+.card-padding-sm {
+  padding: 12px;
+}
+
+.card-padding-md {
+  padding: 24px;
+}
+
+.card-padding-lg {
+  padding: 32px;
+}
+
+/* Card Subcomponents */
+.card-header {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--brand-border);
+}
+
+.card-header:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.card-footer {
+  padding-top: 16px;
+  border-top: 1px solid var(--brand-border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-footer:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* When using Card with subcomponents, remove main padding */
+.card:has(.card-header, .card-body, .card-footer) {
+  padding: 0;
+}
+
+.card:has(.card-header, .card-body, .card-footer) > .card-header,
+.card:has(.card-header, .card-body, .card-footer) > .card-body,
+.card:has(.card-header, .card-body, .card-footer) > .card-footer {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card:has(.card-header, .card-body, .card-footer) > .card-header {
+  padding-top: 24px;
+}
+
+.card:has(.card-header, .card-body, .card-footer) > .card-footer {
+  padding-bottom: 24px;
+}

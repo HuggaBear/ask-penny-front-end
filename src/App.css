@@ -295,3 +295,19 @@
   color: var(--brand-primary);
   font-weight: 600;
 }
+
+/* Demo Section Styles */
+.demo-section {
+  margin-bottom: 24px;
+}
+
+.demo-section:last-child {
+  margin-bottom: 0;
+}
+
+.demo-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brand-charcoal);
+  margin: 0 0 12px;
+}

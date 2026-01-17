@@ -1,0 +1,112 @@
+/* Badge Component Styles */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 16px;
+  white-space: nowrap;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Subtle Variant (default - used in demo) */
+.badge-green.badge-subtle {
+  background-color: #C6F6D5;
+  color: #22543D;
+}
+
+.badge-blue.badge-subtle {
+  background-color: #BEE3F8;
+  color: #2C5282;
+}
+
+.badge-purple.badge-subtle {
+  background-color: #E9D8FD;
+  color: #553C9A;
+}
+
+.badge-orange.badge-subtle {
+  background-color: #FEEBC8;
+  color: #C05621;
+}
+
+.badge-red.badge-subtle {
+  background-color: #FED7D7;
+  color: #C53030;
+}
+
+.badge-gray.badge-subtle {
+  background-color: var(--brand-bgDark);
+  color: var(--brand-text);
+}
+
+/* Solid Variant */
+.badge-green.badge-solid {
+  background-color: #38A169;
+  color: white;
+}
+
+.badge-blue.badge-solid {
+  background-color: #3182CE;
+  color: white;
+}
+
+.badge-purple.badge-solid {
+  background-color: #805AD5;
+  color: white;
+}
+
+.badge-orange.badge-solid {
+  background-color: #DD6B20;
+  color: white;
+}
+
+.badge-red.badge-solid {
+  background-color: #E53E3E;
+  color: white;
+}
+
+.badge-gray.badge-solid {
+  background-color: var(--brand-text);
+  color: white;
+}
+
+/* Outline Variant */
+.badge-green.badge-outline {
+  background-color: transparent;
+  color: #38A169;
+  border: 1px solid #38A169;
+}
+
+.badge-blue.badge-outline {
+  background-color: transparent;
+  color: #3182CE;
+  border: 1px solid #3182CE;
+}
+
+.badge-purple.badge-outline {
+  background-color: transparent;
+  color: #805AD5;
+  border: 1px solid #805AD5;
+}
+
+.badge-orange.badge-outline {
+  background-color: transparent;
+  color: #DD6B20;
+  border: 1px solid #DD6B20;
+}
+
+.badge-red.badge-outline {
+  background-color: transparent;
+  color: #E53E3E;
+  border: 1px solid #E53E3E;
+}
+
+.badge-gray.badge-outline {
+  background-color: transparent;
+  color: var(--brand-text);
+  border: 1px solid var(--brand-border);
+}

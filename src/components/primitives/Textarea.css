@@ -1,0 +1,71 @@
+/* Textarea Component Styles */
+
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.textarea-wrapper-full-width {
+  width: 100%;
+}
+
+.textarea-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brand-charcoal);
+}
+
+.textarea {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  padding: 10px 16px;
+  border: 1px solid var(--brand-border);
+  border-radius: 4px;
+  background-color: white;
+  color: var(--brand-text);
+  resize: vertical;
+  transition: all 0.2s ease-in-out;
+  line-height: 1.5;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(233, 70, 41, 0.1);
+}
+
+.textarea:disabled {
+  background-color: var(--brand-bgDark);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.textarea::placeholder {
+  color: var(--brand-textMuted);
+}
+
+/* Full Width */
+.textarea-full-width {
+  width: 100%;
+}
+
+/* Error State */
+.textarea-error {
+  border-color: #C53030;
+}
+
+.textarea-error:focus {
+  border-color: #C53030;
+  box-shadow: 0 0 0 3px rgba(197, 48, 48, 0.1);
+}
+
+.textarea-error-text {
+  font-size: 14px;
+  color: #C53030;
+}
+
+.textarea-helper-text {
+  font-size: 14px;
+  color: var(--brand-textLight);
+}
