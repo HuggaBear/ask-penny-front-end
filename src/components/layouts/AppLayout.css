@@ -1,0 +1,44 @@
+/* AppLayout Component Styles */
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.app-layout-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background-color: white;
+  border-right: 1px solid var(--brand-border);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar for sidebar */
+.app-layout-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.app-layout-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.app-layout-sidebar::-webkit-scrollbar-thumb {
+  background: var(--brand-border);
+  border-radius: 3px;
+}
+
+.app-layout-sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-textMuted);
+}
+
+.app-layout-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--brand-bg);
+}
